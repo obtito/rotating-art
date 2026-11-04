@@ -1,4 +1,6 @@
-# 书与樱花 · 独立展示页
+# ひとめぐりの恋
+
+「一转倾心」的日文展示名。
 
 独立入口：<https://obtito.github.io/rotating-art/book-sakura/>
 
