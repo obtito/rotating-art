@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="缓缓转动画面，看礼服人物与书页、鲤鱼、樱花相互映现。">
+  <meta name="art-version" content="book-sakura-v6-ccw">
+  <title>旋转互动画 · 书与樱花</title>
+  <link rel="stylesheet" href="style-dabf2f77bfc1.css">
+  <script src="app-e2c8eac45359.js" defer></script>
+</head>
+<body>
+  <main class="viewer">
+    <header class="heading">
+      <div>
+        <p class="eyebrow">旋转互动画</p>
+        <h1>书与樱花</h1>
+      </div>
+      <button class="fullscreen" type="button" data-fullscreen aria-pressed="false" hidden>全屏</button>
+    </header>
+
+    <div class="canvas-wrap">
+      <div class="stage" data-stage role="group" aria-label="可拖动的旋转画。零度为礼服人物，半圈为书页、鲤鱼与樱花。也可使用下方按钮和角度滑杆。">
+        <img class="art" data-art src="assets/art-1f9e206e4231.webp" width="1254" height="1254" alt="礼服人物与书页、鲤鱼、樱花共用的旋转画" draggable="false" fetchpriority="high">
+        <p class="load-state" data-load role="status">正在加载画面…</p>
+      </div>
+    </div>
+
+    <section class="controls" aria-label="旋转控制">
+      <label class="angle-row" for="rotation-angle">
+        <span data-state aria-live="polite">书页与鲤鱼</span>
+        <output for="rotation-angle" data-angle>180°</output>
+      </label>
+      <input id="rotation-angle" type="range" min="0" max="360" step="1" value="180" aria-label="旋转角度" disabled>
+      <div class="actions">
+        <button class="turn" type="button" data-turn disabled>逆时针 180°</button>
+        <button type="button" data-auto aria-pressed="true" disabled>暂停自动</button>
+      </div>
+      <p class="hint">拖动画面可调整角度</p>
+      <p class="message" data-message role="status" hidden></p>
+    </section>
+  </main>
+</body>
+</html>
